@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400@display=swap');
+*{
+    /*this is usually when we make a website to change the default values*/
+   margin: 0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:"Josefin Sans",sans-serif;
+   font-weight: 300;
+}
+/*to keep all font size same*/
+html{
+    font-size: 62.5%;
+}
+
+/* styling class main-division**/
+.main-div{
+     width:100vw;
+     min-height: 100vh;
+     display: grid;
+     place-items: center;
+     background-color:rgb(169, 208, 218);
+}
+
+/*for the class inner-div*/
+.inner-div{
+    width:50vw;   /*slightly moved left*/
+    background-color: rgb(250, 249, 244);
+    /* 30 is for up down and 8o for LR */
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    /*shadow horiz -o , vertical-1rem 
+    blur - 1rem how much is seen that to be blur
+    how much to spread - -0.7rem so only 0.3 part of it will look
+    rgba(0,0,0,0.4) -it gets a shadow below */
+    box-shadow: 0 1rem 1rem -0.5rem rgb(145, 0, 48);
+}
+
+/*for styling h2 element inside innerdiv*/
+.inner-div h2{
+    font-size: 3.5rem; /*canges h2 size*/
+    font-weight: 500; /*changes h2 weight*/
+    margin:1rem 0 4rem 0; /*top right bott left - of h2 element*/
+}
+
+/*for li of inner div*/
+.inner-div li{
+     font-size: 2rem;  /*size*/
+    margin-top: 1.5rem;  /*top margin-space inc*/
+    list-style: none; /*those  li dots to none*/
+}
+
+/*input when selected just normal to make it point*/
+input{
+    cursor: pointer; /*pointing the input -arrow changing to hand pointing*/
+}
+
+
+/*id is given for submit*/
+#submit,
+.btn{
+    padding:1rem 3rem; /*padding - inside*/
+    outline: none;
+    font-size: 2rem;  /*size of button*/
+    font-weight: 400;
+    /*to get submit block at center we use display-block margin-aiuto*/
+    display: block;
+    margin: auto;   /*now moves to center*/
+    border:none; /*removes border of button*/
+    text-transform: uppercase; /*uppercase*/
+    color:cornsilk; /* submit color */
+    background-color: orchid; /*inside button color*/
+    margin-top:1.5rem; /*moves from up */
+
+}
+
+/*to change color when clicked on button we use hover*/
+#submit:hover{
+    background-color: rgb(41, 34, 41); /*when on button changes color*/
+}
+
+/*for showing score we r using some space giving id as showscore*/
+#showscore{
+    background-color:rgb(155, 162, 167);
+    margin-top: 3rem;
+    padding:3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.5rem rgb(145, 0, 48);
+  /*changes all these styling at a time*/
+}
+
+/*next we have class scorearea in div*/
+.scoreArea{
+    display: none; /*firstly making it none coz that score is at last*/
+}
+
+#showscore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showscore .btn{
+    margin-top: 2rem;
+    background-color: rgb(53, 100, 187);
+    color:rgb(186, 186, 214);
+    
+
+}
+
+#showscore .btn:hover{
+    background-color:rgb(68, 184, 204);
+    color:black;
+}
+

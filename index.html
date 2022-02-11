@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>QUIZ WEBSITE</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main-div">
+            <div class="inner-div">
+                <h2 class="question">QUESTION IS HERE</h2>
+                <ul>
+                    <li>
+                        <!--4 options to select only one so name should be same for 4 ,id is given to identify which anw 
+                            is for which option and class is for if wanna change style so all options can be changed only once-->
+                        <input type="radio" name="answer" id="ans1" class="answer">
+                         <!--we get the button but to have the text beside it we use label
+                        id is for which option-->
+                         <label for="ans1" id="option1">op1</label>
+                        </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="ans2" class="answer">
+                        <label for="ans2" id="option2">op2</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans3" class="answer">
+                        <label for="ans3" id="option3">op3</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans4" class="answer">
+                        <label for="ans4" id="option4">op4</label>
+                    </li>
+                    </ul>
+
+                    <!--for submit button below-->
+                    <button id="submit">Submit</button>
+                    <!--next for scoring we get below another box so for that and get playagain
+                    id is given and class for score is given only after all 
+                     Q r done and gets play again-->
+                     <div id="showscore" class="scoreArea"></div>
+
+            </div>
+        </div>
+   <script src="index.js"></script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
